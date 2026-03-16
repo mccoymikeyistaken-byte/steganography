@@ -1,0 +1,56 @@
+Image processing and Bit Manipulation
+
+Message
+   ↓
+Text → Binary
+   ↓
+Insert bits into image pixels
+   ↓
+Save new image
+
+bit0 = 0
+bit1 = 1
+
+# 1byte = 8 bits
+# can represent numbers from 0-255
+# RGB Range (0,0,0) -> (255,255,255)
+# Each channel is represented by a byte that means 8 bits
+# All together -> 3 bytes,24bits
+# decimal values
+# ASCII A-Z goes from (65-90) 
+# a-z goes from (97-122)
+# 0-9 (48-57)
+
+# print(bin(5))
+# print(bin(255))
+
+# print(bin(ord('A')))
+# print(format(ord('A'),'08b'))
+
+# # Convert a message to binary
+
+# msg = input("Enter your message: ")
+# msgInBinary = ''
+# for char in msg:
+#     charInBinary = format(ord(f'{char}'),'08b')
+#     msgInBinary += charInBinary
+
+# print(f"{msgInBinary}")
+
+# # Convert a binary back to text
+
+# binary = input("Enter your binary message: ")
+# realMsg = ''
+# for bit in range(0,len(binary),8):
+#     byte = binary[bit:bit+8]
+#     currchar = chr(int(byte,2))
+#     realMsg += currchar
+
+# print(realMsg)
+
+# AND(&) and OR(|) operators when performed will return the answer diretly
+
+# For any number, MSB.........LSB
+
+# Steganography core principle
+
